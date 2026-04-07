@@ -1,0 +1,53 @@
+body
+{
+    font-family: Roboto;
+}
+
+.playball-regular {
+  font-family: "Playball", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.title
+{
+    font-size: 3rem;
+    padding: .3em;
+    border-bottom: lightgrey solid 1px;
+}
+
+.title > .title-my
+{
+    color: orange;
+}
+
+.title > .title-apm
+{
+    color: navy;
+}
+
+.title > .title-link
+{
+    color: #B22222;
+}
+
+ul li 
+{
+    list-style: none;
+}
+
+button
+{
+    background-color: rgb(231, 231, 231);
+    border: lightgray solid 1px;
+    padding: .5em;
+    margin: .5em;
+
+}
+
+button:hover
+{
+    background-color: rgb(241, 241, 241);
+    border-radius: 10px;
+    cursor: pointer;
+}

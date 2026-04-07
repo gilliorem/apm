@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="attendance.js" defer></script>
+    <title>Attendance link</title>
+</head>
+<body>
+	<section class="main">
+		<label>Input your RA Code:</label>
+	<input class="ra-input" type="text" placeholder="RAXXXXXX"></input>
+	<ul>
+		<button data-url="https://www.myskillsfuture.gov.sg/api/take-attendance/"class="upload-ra-button">Upload RA Code</button>
+	</ul>
+	<h2>Participants List</h2>
+	<h3>Please Upload the list here</h3>
+	<textarea
+		rows="29"
+		cols="50"
+		name="participants-list"></textarea>
+	<button data-url=""class="upload-list-button">Upload Participant list</button>
+	<ul id="missing-list"><h3>People missing:</h3>
+		<li>FirstName LastName</li>
+		<li>FirstName LastName</li>
+	</ul>
+    <h2>Please Scan the QR Code</h2>
+	
+	</section>
+</body>
+</html>

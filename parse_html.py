@@ -65,7 +65,7 @@ new_url = "https://www.myskillsfuture.gov.sg/api/get-attendance?attendanceCode="
 
 
 def refresh_attendance():
-    while True:
+    #while True:
         response = requests.get(new_url);
         data = response.json();
         trainee_list = []
@@ -93,6 +93,6 @@ def refresh_attendance():
         with open('/home/regillio/var/www/html/apm/data/missing/missing.json', 'w') as f:
             json.dump(list(missing_set), f)
 
-        time.sleep(3);
+        #time.sleep(3);
 
 refresh_attendance();

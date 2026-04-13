@@ -7,6 +7,13 @@ const uploadListButton = D.querySelector(".upload-list-button");
 const raInput = D.querySelector(".ra-input");
 const traineeList = D.querySelector('textarea');
 
+const missingButton = D.querySelector(".missing-button");
+
+missingButton.addEventListener("click", (e) =>
+	{
+		if (e.target.dataset.url)
+			window.open(e.target.dataset.url, "_blank")
+	})
 
 const sendRaCodeToServer = async (input) =>
 {
@@ -61,7 +68,7 @@ uploadListButton.addEventListener("click", async (e) =>
 
     try 
     {
-        const response = await fetch("/home/regillio/var/www/html/apm/data/participant-list.php",
+        const response = await fetch("./data/participant-list.php",
             {
                 method: "POST",
                 headers: 

@@ -1,11 +1,11 @@
 const D = document;
 const body = D.body;
-const buttonList = document.querySelector("#button-list");
-const mainSection = document.querySelector(".main");
+const buttonList = D.querySelector("#button-list");
+const mainSection = D.querySelector(".main");
 
-const form = document.querySelector("form");
+const form = D.querySelector("form");
 const textArea = D.querySelector("textarea");
-const formSubmitButton = document.querySelector(".form-submit-button");
+const formSubmitButton = D.querySelector(".form-submit-button");
 
 formSubmitButton.addEventListener("click", async (e) =>
 {
@@ -49,7 +49,7 @@ buttonList.addEventListener("click", (e) =>
 {
     if (e.target.tagName === "BUTTON" && e.target.dataset.url)
     {
-        window.open(e.target.dataset.url, "blank");
+        window.open(e.target.dataset.url, "_blank");
     }
 })
     

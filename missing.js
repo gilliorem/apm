@@ -1,3 +1,6 @@
+const D = document;
+const body = D.body;
+
 function updateMissingList()
 {
     fetch('./data/missing/missing.json?t=' + new Date().getTime())
@@ -23,5 +26,5 @@ function updateMissingList()
         .catch(err => console.error('Error loading missing list:', err));
 }
 
-updateMissingList();
 setInterval(updateMissingList, 3000);
+

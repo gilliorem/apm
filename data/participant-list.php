@@ -8,6 +8,8 @@ if ($data->participantList)
 	$filename = "participant-list.txt";
 	file_put_contents("./participants/" . $filename, $data->participantList);
 	
+# IF YOU ARE RUNNING THIS SCRIPT ON MY SERVER: UNCOMMENT THIS LINE AND COMMENT THE ONE BELOW IT	
+	#$command = '/usr/bin/python3 ../parse_html.py 2>&1';
 	$command = '/usr/bin/python3 ~/var/www/html/apm/parse_html.py 2>&1';
 	$output = shell_exec($command);	
 
